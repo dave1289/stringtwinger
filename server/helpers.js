@@ -43,7 +43,7 @@ function getRandomProg() {
 }
 
 //  uses nums in progression to pull chords from key signature
-const ChordProgTest = () => {
+function ChordProgTest(){
    const progression = getRandomProg()
    const key = getRandomKeySig(keys)
    const chords = []
@@ -58,14 +58,26 @@ const ChordProgTest = () => {
    return `${BASE_URL}${result}`
 }
 
+// brings helper functions together to pullChords from API
 async function pullChords() {
-   const res = await axios.get(ChordProgTest())
-   return res.data
+   try {
+      const response = await axios.get(ChordProgTest());
+      console.log(response.data)
+      return response.data;
+   } catch (error) {
+      console.error(error);
+      throw error;
+   }
 }
 
-module.exports = {
+function generateBpm() {
+   return Math.floor(Math.random() * (160 - 45 + 1) + 45)
+}
+
+module.exports = { 
    ChordProgTest,
    keys,
    progressions,
-   pullChords
+   pullChords,
+   generateBpm
 };

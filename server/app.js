@@ -11,10 +11,11 @@ const app = express();
 
 app.use(express.json());
 
-app.get("/chords", (req, res) => {
-   const chords = helpers.pullChords()
+app.get("/chords", async (req, res) => {
+   const chords = await helpers.pullChords()
    console.log(chords)
-   res.json({data: `${chords}`})
+   const data = chords.map(chord => [chord.strings, chord.chordName])
+   res.json({data: `${JSON.stringify(data)}, ${helpers.generateBpm()}`})
 })
 
 
