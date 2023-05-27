@@ -15,7 +15,7 @@ app.get("/chords", async (req, res) => {
    const chords = await helpers.pullChords()
    console.log(chords)
    const data = chords.map(chord => [chord.strings, chord.chordName])
-   res.json({data: `${JSON.stringify(data)}, ${helpers.generateBpm()}`})
+   res.json({Chorddata : `${JSON.stringify(data)}`, BPM:`${helpers.generateBpm()}`})
 })
 
 
