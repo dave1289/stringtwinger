@@ -3,7 +3,6 @@
    height: 100%;
    margin: 10% auto;
    display: inline;
-   padding: 0;
 }
 
 .Chord-Diagram {
@@ -18,10 +17,7 @@
 }
 
 .fingering {
+   display: block;
    margin: 0;
-   padding: 0;
-}
-
-Chord-Body {
    padding: 0;
 }

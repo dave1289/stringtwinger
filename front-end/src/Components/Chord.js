@@ -3,7 +3,7 @@ import { Card } from "react-bootstrap";
 import './Chord.css'
 
 const Chord = ({ idx, chordName, chordFingering }) => {
-   
+
    return (
       <Card className="Chord" key={idx}>
          <Card.Body className="Chord-Body">
@@ -11,8 +11,8 @@ const Chord = ({ idx, chordName, chordFingering }) => {
                Chord Name
             </Card.Title>
             <Card.Text>
-               <p className="display-6">{chordName.replaceAll(',', '')}</p>
-               <div className="fingering">{chordFingering}</div>
+               <span className="display-6" id="Chord-Name">{chordName.replaceAll(',', '')}</span>
+               <span className="fingering">{chordFingering}</span>
             </Card.Text>
          </Card.Body>
       </Card >
