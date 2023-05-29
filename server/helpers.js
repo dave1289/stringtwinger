@@ -54,15 +54,17 @@ function ChordProgTest(){
    var result = chords.map(function(val) {
       return val;
     }).join(',');
-    console.log(`${BASE_URL}${result}`)
+   //  console.log(`${BASE_URL}${result}`)
    return `${BASE_URL}${result}`
 }
 
 // brings helper functions together to pullChords from API
 async function pullChords() {
+   console.log('Attemping pull')
    try {
+      console.log('Pulling')
       const response = await axios.get(ChordProgTest());
-      console.log(response.data)
+      // console.log(response.data)
       return response.data;
    } catch (error) {
       console.error(error);
@@ -70,14 +72,10 @@ async function pullChords() {
    }
 }
 
-function generateBpm() {
-   return Math.floor(Math.random() * (160 - 45 + 1) + 45)
-}
 
 module.exports = { 
    ChordProgTest,
    keys,
    progressions,
-   pullChords,
-   generateBpm
+   pullChords
 };

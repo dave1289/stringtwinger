@@ -9,7 +9,6 @@ const GuitarRoutes = () => {
       <Routes>
          <Route exact="true" path="/" element={<Home />} />
          <Route exact="true" path="/jam" element={<Jam />} />
-         <Route exact="true" path="/chords" element={<Chord />} />
       </Routes>
    )
 }

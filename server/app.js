@@ -9,13 +9,18 @@ const { NotFoundError } = require("./expressError");
 
 const app = express();
 
+app.use(function(req, res, next) {
+   res.header("Access-Control-Allow-Origin", "*");
+   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+   next();
+});
+
 app.use(express.json());
 
 app.get("/chords", async (req, res) => {
    const chords = await helpers.pullChords()
-   console.log(chords)
-   const data = chords.map(chord => [chord.strings, chord.chordName])
-   res.json({Chorddata : `${JSON.stringify(data)}`, BPM:`${helpers.generateBpm()}`})
+   const data = chords.map(chord => [chord.chordName])
+   res.json({Chorddata : `${JSON.stringify(data)}`})
 })
 
 

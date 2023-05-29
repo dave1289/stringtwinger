@@ -1,21 +1,21 @@
-import React from "react";
+import { React, useEffect } from "react";
 import { Card } from "react-bootstrap";
 import './Chord.css'
 
-const Chord = () => {
+const Chord = ({ chordData }) => {
+
    return (
       <Card className="Chord">
          <Card.Body>
             <Card.Title>
-               This is a chord.
+               Chord Name
             </Card.Title>
-            <Card.Text>
-               Jam Chords Jamming
+            <Card.Text className="Chord-Name">
+               {chordData.join().replaceAll(',', '')}
             </Card.Text>
-            <div className="Chord-Diagram"></div>
          </Card.Body>
-      </Card>
-   )
-}
+      </Card >
+   );
+};
 
 export default Chord;
