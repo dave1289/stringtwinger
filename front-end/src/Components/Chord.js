@@ -1,11 +1,11 @@
-import { React, useEffect } from "react";
+import { React } from "react";
 import { Card } from "react-bootstrap";
 import './Chord.css'
 
-const Chord = ({ chordData }) => {
+const Chord = ({ idx, chordData }) => {
 
    return (
-      <Card className="Chord">
+      <Card className="Chord" key={idx}>
          <Card.Body>
             <Card.Title>
                Chord Name

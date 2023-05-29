@@ -8,12 +8,16 @@ import axios from "axios";
 
 
 const Jam = () => {
+
    const [chords, setChords] = useState([]);
    const [loading, setLoading] = useState(true);
 
-   useEffect(() => {
-      axios.get('http://localhost:3001/chords')
+   const fetchData = () => {
+      setLoading(true);
+      axios
+         .get("http://localhost:3001/chords")
          .then((response) => {
+            console.log(response.data);
             setChords(JSON.parse(response.data.Chorddata));
             setLoading(false);
          })
@@ -21,10 +25,18 @@ const Jam = () => {
             console.error("Error fetching chords:", error);
             setLoading(false);
          });
+   };
+
+   useEffect(() => {
+      fetchData();
    }, []);
 
+   const handleRefresh = () => {
+      fetchData();
+   };
+
    if (loading) {
-      return <div>Loading...</div>;
+      return <div className="Loading">Loading...</div>;
    }
 
    if (chords.length === 0) {
@@ -38,16 +50,19 @@ const Jam = () => {
          <div className="Jam-Chords">
             <Container>
                <Row>
-                  {chords.map(chord => {
+                  {chords.map((chord, index) => {
                      return (
                         <Col>
-                           <Chord chordData={chord} />
+                           <Chord idx={index} chordData={chord} />
                         </Col>)
                   })}
                </Row>
             </Container>
          </div>
          <Metronome />
+         <Button onClick={handleRefresh} id="Jam-Home">
+            Refresh!
+         </Button>
          <Button href="/" id="Jam-Home">
             Home!
          </Button>

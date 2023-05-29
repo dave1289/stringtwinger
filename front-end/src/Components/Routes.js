@@ -2,7 +2,6 @@ import React from "react";
 import { Routes, Route} from 'react-router-dom';
 import Home from "./Home";
 import Jam from "./Jam";
-import Chord from "./Chord";
 
 const GuitarRoutes = () => {
    return (

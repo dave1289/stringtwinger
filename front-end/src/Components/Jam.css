@@ -10,3 +10,8 @@
 .display-2 {
    margin-bottom: .75em;
 }
+
+.Loading {
+   font-size: 3em;
+   margin: 20% auto;
+}
