@@ -3,6 +3,7 @@
    height: 100%;
    margin: 10% auto;
    display: inline;
+   padding: 0;
 }
 
 .Chord-Diagram {
@@ -14,4 +15,13 @@
 
 .Chord-Name {
    font-size: 3em;
+}
+
+.fingering {
+   margin: 0;
+   padding: 0;
+}
+
+Chord-Body {
+   padding: 0;
 }

@@ -19,6 +19,7 @@ const Jam = () => {
          .then((response) => {
             console.log(response.data);
             setChords(JSON.parse(response.data.Chorddata));
+            console.log(response.data.Chorddata)
             setLoading(false);
          })
          .catch((error) => {
@@ -43,6 +44,7 @@ const Jam = () => {
       return <div>No chords available.</div>;
    }
 
+
    return (
       <div className="Jam">
          <h1 className="display-2">Let's get to jammin'</h1>
@@ -53,7 +55,7 @@ const Jam = () => {
                   {chords.map((chord, index) => {
                      return (
                         <Col>
-                           <Chord idx={index} chordData={chord} />
+                           <Chord idx={index} chordName={chord[0]} chordFingering={chord[1]} />
                         </Col>)
                   })}
                </Row>

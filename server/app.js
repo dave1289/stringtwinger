@@ -19,7 +19,7 @@ app.use(express.json());
 
 app.get("/chords", async (req, res) => {
    const chords = await helpers.pullChords()
-   const data = chords.map(chord => [chord.chordName])
+   const data = chords.map(chord => [chord.chordName, chord.strings])
    res.json({Chorddata : `${JSON.stringify(data)}`})
 })
 
