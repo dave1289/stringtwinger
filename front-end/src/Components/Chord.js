@@ -5,10 +5,10 @@ import './Chord.css'
 const Chord = ({ idx, chordName, chordFingering }) => {
 
    return (
-      <Card className="Chord" key={idx}>
+      <Card className="Chord">
          <Card.Body className="Chord-Body">
             <Card.Title>
-               Chord {idx + 1}
+               Chord Name
             </Card.Title>
             <Card.Text>
                <span className="display-6" id="Chord-Name">{chordName.replaceAll(',', '')}</span>

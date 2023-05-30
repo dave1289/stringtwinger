@@ -10,11 +10,11 @@ const keys = {
    E: ['E', 'Gb_m', 'Ab_m', 'A', 'B', 'Db_m', 'Cb_dim'],
    F: ['F', 'G_m', 'A_m', 'Bb', 'C', 'D_m', 'E_dim'],
    G: ['G', 'A_m', 'B_m', 'C', 'D', 'E_m', 'Gb_dim'],
-   A_m: ['A_m', 'B_dim', 'C', 'Dm', 'E_m', 'F', 'G',],
-   B_m: ['B_m', 'Db_dim', 'D', 'E_m', 'Gb_m', 'G', 'A',],
+   A_m: ['A_m', 'B_dim', 'C', 'Dm', 'E_m', 'F', 'G'],
+   B_m: ['B_m', 'Db_dim', 'D', 'E_m', 'Gb_m', 'G', 'A'],
    C_m: ['C_m', 'D_dim', 'Eb', 'F_m', 'G_m', 'Ab', 'Bb'],
-   D_m: ['D_m', 'E_dim', 'F', 'G_m', 'A_m', 'Bb', 'C',],
-   E_m: ['E_m', 'Gb_dim', 'G', 'A_m', 'B_m', 'C', 'D',],
+   D_m: ['D_m', 'E_dim', 'F', 'G_m', 'A_m', 'Bb', 'C'],
+   E_m: ['E_m', 'Gb_dim', 'G', 'A_m', 'B_m', 'C', 'D'],
    F_m: ['F_m', 'G_dim', 'Ab', 'Bb_m', 'C_m', 'Db', 'Eb'],
    G_m: ['G_m', 'A_dim', 'Bb', 'C_m', 'D_m', 'Eb', 'F']
 }

@@ -10,7 +10,7 @@ import axios from "axios";
 const Jam = () => {
 
    const [chords, setChords] = useState([]);
-   const [loading, setLoading] = useState(true);
+   const [loading, setLoading] = useState(false);
 
    const fetchData = () => {
       setLoading(true);
@@ -26,35 +26,31 @@ const Jam = () => {
          });
    };
 
-   useEffect(() => {
-      fetchData();
-   }, []);
-
    const handleRefresh = () => {
+      setChords([])
       fetchData();
    };
-
 
    return (
       <div className="Jam">
          <h1 className="display-2">Let's get to jammin'</h1>
          <p className="display-6">Set your tempo below, hit start and get creative!</p>
-         {loading? <div className="Loading">Loading...</div>:          
-         <div className="Jam-Chords">
-            <Container>
-               <Row>
-                  {chords.map((chord, index) => {
-                     return (
-                        <Col>
-                           <Chord idx={index} chordName={chord[0]} chordFingering={chord[1]} />
-                        </Col>)
-                  })}
-               </Row>
-            </Container>
-            <Metronome />
-         </div>}
+         {loading ? <div className="Loading">Loading...</div> :
+            <div className="Jam-Chords">
+               <Container>
+                  <Row>
+                     {chords.map((chord) => {
+                        return (
+                           <Col key={chord[0]}>
+                              <Chord chordName={chord[0]} chordFingering={chord[1]} />
+                           </Col>)
+                     })}
+                  </Row>
+               </Container>
+               <Metronome />
+            </div>}
          <Button onClick={handleRefresh} className="Jam-Btn">
-            Refresh!
+            Generate!
          </Button>
          <Button href="/" className="Jam-Btn">
             Home!
@@ -63,4 +59,4 @@ const Jam = () => {
    );
 }
 
-export default Jam;
+export default React.memo(Jam);
