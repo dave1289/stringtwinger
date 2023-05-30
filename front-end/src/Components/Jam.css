@@ -2,9 +2,10 @@
    margin: 5% auto;
 }
 
-#Jam-Home {
+.Jam-Btn {
    margin-top: 2em;
    width: 10em;
+   margin: 2%;
 }
 
 .display-2 {
@@ -13,5 +14,4 @@
 
 .Loading {
    font-size: 3em;
-   margin: 20% auto;
 }

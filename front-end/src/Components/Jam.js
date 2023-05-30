@@ -17,9 +17,7 @@ const Jam = () => {
       axios
          .get("http://localhost:3001/chords")
          .then((response) => {
-            console.log(response.data);
             setChords(JSON.parse(response.data.Chorddata));
-            console.log(response.data.Chorddata)
             setLoading(false);
          })
          .catch((error) => {
@@ -36,19 +34,12 @@ const Jam = () => {
       fetchData();
    };
 
-   if (loading) {
-      return <div className="Loading">Loading...</div>;
-   }
-
-   if (chords.length === 0) {
-      return <div>No chords available.</div>;
-   }
-
 
    return (
       <div className="Jam">
          <h1 className="display-2">Let's get to jammin'</h1>
          <p className="display-6">Set your tempo below, hit start and get creative!</p>
+         {loading? <div className="Loading">Loading...</div>:          
          <div className="Jam-Chords">
             <Container>
                <Row>
@@ -60,12 +51,12 @@ const Jam = () => {
                   })}
                </Row>
             </Container>
-         </div>
-         <Metronome />
-         <Button onClick={handleRefresh} id="Jam-Home">
+            <Metronome />
+         </div>}
+         <Button onClick={handleRefresh} className="Jam-Btn">
             Refresh!
          </Button>
-         <Button href="/" id="Jam-Home">
+         <Button href="/" className="Jam-Btn">
             Home!
          </Button>
       </div>

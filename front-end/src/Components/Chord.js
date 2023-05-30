@@ -8,7 +8,7 @@ const Chord = ({ idx, chordName, chordFingering }) => {
       <Card className="Chord" key={idx}>
          <Card.Body className="Chord-Body">
             <Card.Title>
-               Chord Name
+               Chord {idx + 1}
             </Card.Title>
             <Card.Text>
                <span className="display-6" id="Chord-Name">{chordName.replaceAll(',', '')}</span>
