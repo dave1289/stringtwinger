@@ -12,7 +12,7 @@ const Jam = () => {
    const [chords, setChords] = useState([]);
    const [loading, setLoading] = useState(false);
 
-   const fetchData = () => {
+   const fetchData = async () => {
       setLoading(true);
       axios
          .get("http://localhost:3001/chords")
@@ -25,6 +25,13 @@ const Jam = () => {
             setLoading(false);
          });
    };
+
+   useEffect(() => {
+      const fetchDataAsync = async () => {
+         fetchData();
+      }
+      fetchDataAsync();
+   })
 
    const handleRefresh = () => {
       setChords([])
