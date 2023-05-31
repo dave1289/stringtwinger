@@ -30,4 +30,5 @@
    margin: 0 auto;
    background: rgb(54, 40, 10);
    background: linear-gradient(90deg, rgba(54, 40, 10, 1) 0%, rgba(87, 61, 1, 1) 23%, rgba(235, 186, 60, 1) 100%);
+   padding: 2%;
 }

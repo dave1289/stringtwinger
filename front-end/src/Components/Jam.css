@@ -38,3 +38,13 @@
    height: 100vh;
    padding: 2%;
 }
+
+.Jam-Title {
+   display: flex;
+   box-shadow: 4px 3px 8px;
+   border-radius: 15px;
+   height: 8em;
+   justify-content: center;
+   align-items: center;
+   background-color: white;
+}
