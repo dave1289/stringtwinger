@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Card, Row } from "react-bootstrap";
 import Chord from "./Chord";
 import './Jam.css'
 import Metronome from "./Metronome";
@@ -48,13 +48,18 @@ const Jam = () => {
                   </Row>
                </Container>
                <Metronome />
+               <Button onClick={handleRefresh} className="Jam-Btn">
+                  Generate!
+               </Button>
+               <Button href="/" className="Jam-Btn">
+                  Home!
+               </Button>
             </div>}
-         <Button onClick={handleRefresh} className="Jam-Btn">
-            Generate!
-         </Button>
-         <Button href="/" className="Jam-Btn">
-            Home!
-         </Button>
+            <Card className="Jam-P">
+               <Card.Body>
+                  Review your chords, set your metronome and don't forget to get creative with strumming patterns, arpeggions, your flourishes and solos!  You could be starting your next song right now and not even know it yet!
+               </Card.Body>
+            </Card>
       </div>
    );
 }

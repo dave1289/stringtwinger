@@ -5,7 +5,7 @@ const BASE_URL = 'https://api.uberchord.com/v1/chords/'
 const keys = {
    A: ['A', 'B_m', 'Db', 'D', 'E', 'Gb_m', 'Ab_dim'],
    B: ['B', 'Db_m', 'Eb_m', 'Gb', 'Ab_m', 'Bb_dim'],
-   C: ['C', 'Dm', 'E_m', 'F', 'G', 'A_m', 'B_dim'],
+   C: ['C', 'D_m', 'E_m', 'F', 'G', 'A_m', 'B_dim'],
    D: ['D', 'E_m', 'Gb_m', 'G', 'A', 'B_m', 'Db_dim'],
    E: ['E', 'Gb_m', 'Ab_m', 'A', 'B', 'Db_m', 'Cb_dim'],
    F: ['F', 'G_m', 'A_m', 'Bb', 'C', 'D_m', 'E_dim'],
@@ -54,15 +54,14 @@ function ChordProgTest(){
    var result = chords.map(function(val) {
       return val;
     }).join(',');
+   //  console.log(result, key, progression)
    //  console.log(`${BASE_URL}${result}`)
    return `${BASE_URL}${result}`
 }
 
 // brings helper functions together to pullChords from API
 async function pullChords() {
-   console.log('Attemping pull')
    try {
-      console.log('Pulling')
       const response = await axios.get(ChordProgTest());
       // console.log(response.data)
       return response.data;
