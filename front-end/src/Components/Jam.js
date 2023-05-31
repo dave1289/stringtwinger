@@ -33,7 +33,9 @@ const Jam = () => {
 
    return (
       <div className="Jam">
-         <h1 className="display-2">Let's get to jammin'</h1>
+         <div className="Jam-Title">
+            <h1 className="display-3">Let's get to jammin'</h1>
+         </div>
          <p className="display-6">Set your tempo below, hit start and get creative!</p>
          {loading ? <div className="Loading">Loading...</div> :
             <div className="Jam-Chords">

@@ -1,5 +1,9 @@
 .Jam-Chords {
    margin: 5% auto;
+   box-shadow: 4px 3px 8px;
+   width: 80%;
+   background-color: white;
+   border-radius: 2%;
 }
 
 .Jam-Btn {
@@ -14,13 +18,23 @@
 
 .Loading {
    font-size: 3em;
-   margin: 10%;
+   margin: 20%;
 }
 
 .Jam-P {
-      width: 40%;
-      margin: 5% auto 5% auto;
-      box-shadow: 4px 3px 8px;
-      min-width: 200px;
-      font-size: 1.5em;
+   width: 60%;
+   margin: 5% auto 5% auto;
+   box-shadow: 4px 3px 8px;
+   min-width: 200px;
+   font-size: 1.5em;
+   padding: 10px;
+}
+
+.Jam {
+   background: rgb(54, 40, 10);
+   background: linear-gradient(90deg, rgba(54, 40, 10, 1) 0%, rgba(87, 61, 1, 1) 6%, rgba(235, 186, 60, 1) 100%);
+   width: 80%;
+   margin: 0 auto;
+   height: 100vh;
+   padding: 2%;
 }

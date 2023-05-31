@@ -5,7 +5,7 @@ import './Chord.css'
 const Chord = ({ idx, chordName, chordFingering }) => {
 
    return (
-      <Card className="Chord">
+      <Card className="Chord" id="Chord">
          <Card.Body className="Chord-Body">
             <Card.Title>
                Chord Name

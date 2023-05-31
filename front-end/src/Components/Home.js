@@ -5,6 +5,7 @@ import './Home.css'
 
 const Home = () => {
    return (
+      <div className="Home-Div">
       <Container className="Home">
          <div className="Home-Title">
             <h1 className="display-3">Welcome to String Twing'R</h1>
@@ -19,6 +20,7 @@ const Home = () => {
             <Button href="/jam">Jam!</Button>
          </Container>
       </Container>
+      </div>
    )
 }
 

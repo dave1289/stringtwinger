@@ -5,13 +5,6 @@
    display: inline;
 }
 
-.Chord-Diagram {
-   background-color: black;
-   height: 10em;
-   width: 10em;
-   margin: auto;
-}
-
 .Chord-Name {
    font-size: 3em;
 }
