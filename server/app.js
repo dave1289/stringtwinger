@@ -5,6 +5,8 @@
 const express = require("express");
 const helpers = require("./helpers")
 
+process.env.NODE_ENV = 'production';
+
 const { NotFoundError } = require("./expressError");
 
 const app = express();
