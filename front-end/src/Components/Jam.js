@@ -15,7 +15,7 @@ const Jam = () => {
    const fetchData = () => {
       setLoading(true);
       axios
-         .get("https://stringtwingr.onrender.com/chords")
+         .get("https://stringback.onrender.com/chords")
          .then((response) => {
             setChords(JSON.parse(response.data.Chorddata));
             setLoading(false);
