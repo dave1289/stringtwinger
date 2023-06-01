@@ -1,5 +1,5 @@
 .card {
-   width: 40%;
+   width: 55%;
    margin: 30% auto 5% auto;
    box-shadow: 4px 3px 8px;
    min-width: 200px;
@@ -31,4 +31,8 @@
    background: rgb(54, 40, 10);
    background: linear-gradient(90deg, rgba(54, 40, 10, 1) 0%, rgba(87, 61, 1, 1) 23%, rgba(235, 186, 60, 1) 100%);
    padding: 2%;
+}
+
+.Home-P {
+   font-size: 1.5em;
 }
