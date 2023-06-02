@@ -28,7 +28,16 @@
    width: 80%;
    height: 100vh;
    margin: 0 auto;
-   background: white;
+   background: hsla(196, 100%, 83%, 1);
+
+background: linear-gradient(90deg, hsla(196, 100%, 83%, 1) 0%, hsla(0, 0%, 100%, 1) 46%, hsla(41, 100%, 22%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(196, 100%, 83%, 1) 0%, hsla(0, 0%, 100%, 1) 46%, hsla(41, 100%, 22%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(196, 100%, 83%, 1) 0%, hsla(0, 0%, 100%, 1) 46%, hsla(41, 100%, 22%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#A6E7FF", endColorstr="#FFFFFF", GradientType=1 );
+   padding: 2%;
 }
 
 .Home-P {
