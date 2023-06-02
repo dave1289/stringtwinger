@@ -17,7 +17,7 @@ const Home = () => {
                </Card.Body>
                <span className="display-6">Click below to get started!</span>
             </Card>
-            <Button href="https://stringtwingr.onrender.com/jam">Jam!</Button>
+            <Button href="/jam">Jam!</Button>
          </Container>
       </Container>
       </div>
