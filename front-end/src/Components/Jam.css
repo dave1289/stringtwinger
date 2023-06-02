@@ -26,7 +26,7 @@
    margin: 5% auto 5% auto;
    box-shadow: 4px 3px 8px;
    min-width: 200px;
-   font-size: 1.5em;
+   font-size: 1.5vw;
    padding: 10px;
 }
 
@@ -42,8 +42,9 @@
    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#A6E7FF", endColorstr="#FFFFFF", GradientType=1);
    width: 80%;
    margin: 0 auto;
-   height: 100vh;
+   min-height: 100vh;
    padding: 2%;
+   background-attachment: fixed;
 }
 
 .Jam-Title {

@@ -66,7 +66,7 @@ class Metronome extends React.Component {
    render() {
        return (
          <div>
-             <h1>Metronome</h1>
+             <h3>Metronome</h3>
              <Slider bpm={this.state.bpm} handleChange={this.handleBPM}/>
              <Button handleClick={this.startStop} currentState={this.state.playing}/>
          </div>

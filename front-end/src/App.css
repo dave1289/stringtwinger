@@ -5,4 +5,5 @@
   background-size:contain;
   background-position: left;
   background-repeat: repeat-y;
+  background-attachment: fixed;
 }

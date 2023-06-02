@@ -12,6 +12,7 @@
 
 .Home {
    width: 80%;
+   background-attachment: fixed;
 }
 
 .Home-Title {
@@ -26,7 +27,7 @@
 
 .Home-Div {
    width: 80%;
-   height: 100vh;
+   min-height: 100vh;
    margin: 0 auto;
    background: hsla(196, 100%, 83%, 1);
 
@@ -38,8 +39,9 @@
 
    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#A6E7FF", endColorstr="#FFFFFF", GradientType=1);
    padding: 2%;
+   background-attachment: fixed;
 }
 
 .Home-P {
-   font-size: 1.5em;
+   font-size: 1.5vw;
 }
