@@ -1,6 +1,7 @@
 # stringtwinger
 
 String Twinger is an application that uses the uberchord API.
+String Twinger uses a create-react-app for the front-end with react-bootstrap for styling and Node.js with express for backend functionality.
 
 The web app pulls chord name and playing data from the uber chord API and displays them in a random chord progression with accompanying metronome for timing.
 
