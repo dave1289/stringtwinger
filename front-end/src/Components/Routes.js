@@ -3,6 +3,7 @@ import { Routes, Route} from 'react-router-dom';
 import Home from "./Home";
 import Jam from "./Jam";
 
+// routes component for use with browser router through react-router-dom
 const GuitarRoutes = () => {
    return (
       <Routes>
