@@ -1,6 +1,6 @@
 .card {
    width: 55%;
-   margin: 30% auto 5% auto;
+   margin: 10% auto 5% auto;
    box-shadow: 4px 3px 8px;
    min-width: 200px;
    padding: 10px;
@@ -30,13 +30,13 @@
    margin: 0 auto;
    background: hsla(196, 100%, 83%, 1);
 
-background: linear-gradient(90deg, hsla(196, 100%, 83%, 1) 0%, hsla(0, 0%, 100%, 1) 46%, hsla(41, 100%, 22%, 1) 100%);
+   background: linear-gradient(90deg, hsla(196, 100%, 83%, 1) 0%, hsla(0, 0%, 100%, 1) 46%, hsla(41, 100%, 22%, 1) 100%);
 
-background: -moz-linear-gradient(90deg, hsla(196, 100%, 83%, 1) 0%, hsla(0, 0%, 100%, 1) 46%, hsla(41, 100%, 22%, 1) 100%);
+   background: -moz-linear-gradient(90deg, hsla(196, 100%, 83%, 1) 0%, hsla(0, 0%, 100%, 1) 46%, hsla(41, 100%, 22%, 1) 100%);
 
-background: -webkit-linear-gradient(90deg, hsla(196, 100%, 83%, 1) 0%, hsla(0, 0%, 100%, 1) 46%, hsla(41, 100%, 22%, 1) 100%);
+   background: -webkit-linear-gradient(90deg, hsla(196, 100%, 83%, 1) 0%, hsla(0, 0%, 100%, 1) 46%, hsla(41, 100%, 22%, 1) 100%);
 
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#A6E7FF", endColorstr="#FFFFFF", GradientType=1 );
+   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#A6E7FF", endColorstr="#FFFFFF", GradientType=1);
    padding: 2%;
 }
 
