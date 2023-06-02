@@ -1,6 +1,6 @@
 .card {
    width: 55%;
-   margin: 30% auto 5% auto;
+   margin: 10% auto 5% auto;
    box-shadow: 4px 3px 8px;
    min-width: 200px;
    padding: 10px;
@@ -28,8 +28,15 @@
    width: 80%;
    height: 100vh;
    margin: 0 auto;
-   background: rgb(54, 40, 10);
-   background: linear-gradient(90deg, rgba(54, 40, 10, 1) 0%, rgba(87, 61, 1, 1) 23%, rgba(235, 186, 60, 1) 100%);
+   background: hsla(196, 100%, 83%, 1);
+
+   background: linear-gradient( hsla(196, 100%, 83%, 1) 0%, hsla(0, 0%, 100%, 1) 46%, hsla(41, 100%, 22%, 1) 100%);
+
+   background: -moz-linear-gradient(hsla(196, 100%, 83%, 1) 0%, hsla(0, 0%, 100%, 1) 46%, hsla(41, 100%, 22%, 1) 100%);
+
+   background: -webkit-linear-gradient(hsla(196, 100%, 83%, 1) 0%, hsla(0, 0%, 100%, 1) 46%, hsla(41, 100%, 22%, 1) 100%);
+
+   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#A6E7FF", endColorstr="#FFFFFF", GradientType=1);
    padding: 2%;
 }
 

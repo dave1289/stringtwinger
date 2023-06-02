@@ -31,8 +31,15 @@
 }
 
 .Jam {
-   background: rgb(54, 40, 10);
-   background: linear-gradient(90deg, rgba(54, 40, 10, 1) 0%, rgba(87, 61, 1, 1) 6%, rgba(235, 186, 60, 1) 100%);
+   background: hsla(196, 100%, 83%, 1);
+
+   background: linear-gradient( hsla(196, 100%, 83%, 1) 0%, hsla(0, 0%, 100%, 1) 46%, hsla(41, 100%, 22%, 1) 100%);
+
+   background: -moz-linear-gradient(hsla(196, 100%, 83%, 1) 0%, hsla(0, 0%, 100%, 1) 46%, hsla(41, 100%, 22%, 1) 100%);
+
+   background: -webkit-linear-gradient(hsla(196, 100%, 83%, 1) 0%, hsla(0, 0%, 100%, 1) 46%, hsla(41, 100%, 22%, 1) 100%);
+
+   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#A6E7FF", endColorstr="#FFFFFF", GradientType=1);
    width: 80%;
    margin: 0 auto;
    height: 100vh;
