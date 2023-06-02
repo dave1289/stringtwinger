@@ -27,7 +27,7 @@
 
 .Home-Div {
    width: 80%;
-   height: 100vh;
+   min-height: 100vh;
    margin: 0 auto;
    background: hsla(196, 100%, 83%, 1);
 
