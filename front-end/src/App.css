@@ -1,4 +1,8 @@
 .App {
   text-align: center;
   background-color: black;
+  background-image: url('./Images/background-imgnew.png');
+  background-size:contain;
+  background-position: left;
+  background-repeat: repeat-y;
 }

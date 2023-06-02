@@ -8,8 +8,10 @@ class Metronome extends React.Component {
            playing: false,
            count: 0,
        }
+      //  hosted clicks for metronome playback
        this.click1 = new Audio("https://daveceddia.com/freebies/react-metronome/click1.wav");
        this.click2 = new Audio("https://daveceddia.com/freebies/react-metronome/click1.wav");
+      //  binding state to react class component
        this.handleBPM = this.handleBPM.bind(this);
        this.updateInterval = this.updateInterval.bind(this);
        this.startStop = this.startStop.bind(this);
@@ -37,6 +39,7 @@ class Metronome extends React.Component {
        };
    }
 
+   // increments click sound based on previous sound.
    playClick() {
        if (this.state.count === 0) this.click2.play();
        else this.click1.play();

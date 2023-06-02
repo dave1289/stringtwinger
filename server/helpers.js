@@ -2,6 +2,7 @@ const axios = require('axios')
 
 const BASE_URL = 'https://api.uberchord.com/v1/chords/'
 
+// every chord in every natural major and minor key
 const keys = {
    A: ['A', 'B_m', 'Db', 'D', 'E', 'Gb_m', 'Ab_dim'],
    B: ['B', 'Db_m', 'Eb_m', 'Gb', 'Ab_m', 'Bb_dim'],
@@ -19,6 +20,7 @@ const keys = {
    G_m: ['G_m', 'A_dim', 'Bb', 'C_m', 'D_m', 'Eb', 'F']
 }
 
+// basic chord progressions
 const progressions = [
    [1, 3, 5],
    [1, 4, 6, 5],
