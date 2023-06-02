@@ -12,3 +12,19 @@ For local calls change the pull request in "Jam.js" to "localhost:3001" from "st
 From the home page you can navigate to the "Jam" page where you have access to a metronome and a reusable generate button for new chords from a new key in a new progression.
 
 Have fun!
+
+
+-- To dos
+  -- Add user functionality
+  -- User Db {
+      userId:
+      username:
+      hashed_pass:
+      }
+  -- Jams db {
+      userId:
+      JamId:
+      Chords:
+      Comment:
+      }
+ -- Style for mobile / improve design
