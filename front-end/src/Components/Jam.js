@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { Button, Col, Container, Card, Row } from "react-bootstrap";
+import { Col, Container, Card, Row, Button } from "react-bootstrap";
 import Chord from "./Chord";
 import './Jam.css'
 import Metronome from "./Metronome";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 
 
@@ -28,7 +29,7 @@ const Jam = () => {
          });
    };
 
-   // Handle refresh is for our generate button which allows you to generate a new or first chord progression.  Access to metronome is standard before generation to make this a more versatile tool.
+   // Handle refresh is for our generate Link which allows you to generate a new or first chord progression.  Access to metronome is standard before generation to make this a more versatile tool.
    const handleRefresh = () => {
       setChords([])
       fetchData();
@@ -58,9 +59,9 @@ const Jam = () => {
                <Button onClick={handleRefresh} className="Jam-Btn">
                   Generate!
                </Button>
-               <Button href="/" className="Jam-Btn">
+               <Link to={"/"} className="Jam-Btn btn btn-primary">
                   Home!
-               </Button>
+               </Link>
             </div>}
             <Card className="Jam-P">
                <Card.Body>
