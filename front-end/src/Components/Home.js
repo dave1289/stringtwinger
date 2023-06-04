@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom"
 import { Button, Card, Container } from "react-bootstrap"
 import './Home.css'
 
-
+// Home page component.
 const Home = () => {
    return (
       <div className="Home-Div">
@@ -18,7 +19,7 @@ const Home = () => {
                </Card.Body>
                <span className="display-6">Click below to get started!</span>
             </Card>
-            <Button href="/jam">Jam!</Button>
+            <Link to={"/jam"} className="btn btn-primary">Jam!</Link>
          </Container>
       </Container>
       <div className="Guitar-Img"></div>
